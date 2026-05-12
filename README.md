@@ -29,7 +29,7 @@ See [docs/architecture.md](docs/architecture.md) for details.
 
 ## 📁 Project structure
 
-\`\`\`
+```
 .
 ├── docs/              # Documentation and ADRs
 │   ├── adr/           # Architecture Decision Records
@@ -42,39 +42,39 @@ See [docs/architecture.md](docs/architecture.md) for details.
 ├── data/              # Local data (gitignored)
 ├── requirements.txt   # Python dependencies
 └── .env.example       # Environment variables template
-\`\`\`
+```
 
 ## 🚀 Local setup
 
 ### Prerequisites
 - Python 3.10+
-- PostgreSQL 14+
+- PostgreSQL 14+ - (*Developed on PostgreSQL 16*)
 - Git
 
 ### Steps
 
 1. Clone the repository:
-   \`\`\`bash
+   ```bash
    git clone https://github.com/fevc08/code-syndicate-market-intel.git
    cd code-syndicate-market-intel
-   \`\`\`
+   ```
 
 2. Create and activate a virtual environment:
-   \`\`\`bash
+   ```bash
    python3 -m venv .venv
    source .venv/bin/activate
-   \`\`\`
+   ```
 
 3. Install dependencies:
-   \`\`\`bash
+   ```bash
    pip install -r requirements.txt
-   \`\`\`
+   ```
 
 4. Configure environment variables:
-   \`\`\`bash
+   ```bash
    cp .env.example .env
    # Edit .env with your real credentials
-   \`\`\`
+   ```
 
 5. Create the PostgreSQL database and schemas (see project documentation).
 
