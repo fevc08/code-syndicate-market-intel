@@ -35,3 +35,19 @@
 ```bash
    psql -h localhost -U user_name -d db_name
 ```
+
+6. Update your local `.env` file with the password chosen in step 2:
+
+## Notes on architecture
+
+This project uses a **medallion architecture** with three schemas:
+
+- `raw` (Bronze): raw data ingested from sources, append-only.
+- `staging` (Silver): cleaned and typed data, built with dbt.
+- `marts` (Gold): dimensional model for analytics, built with dbt.
+
+See [architecture.md](architecture.md) for details.
+
+## Security
+
+The `user_name` user has database-scoped privileges but is **not** a superuser. This follows the **least privilege principle**: if application credentials leak, damage is contained.
