@@ -16,6 +16,7 @@ Code Syndicate Latam is a B2B technology consultancy based in Chile. This projec
 | Machine Learning | Scikit-learn |
 | Visualization | Looker Studio |
 | Version control | Git + GitHub |
+> Developed and tested on PostgreSQL 16.
 
 ## 🏛️ Architecture
 
@@ -48,7 +49,7 @@ See [docs/architecture.md](docs/architecture.md) for details.
 
 ### Prerequisites
 - Python 3.10+
-- PostgreSQL 14+ - (*Developed on PostgreSQL 16*)
+- PostgreSQL 14+
 - Git
 
 ### Steps
@@ -76,7 +77,7 @@ See [docs/architecture.md](docs/architecture.md) for details.
    # Edit .env with your real credentials
    ```
 
-5. Create the PostgreSQL database and schemas (see project documentation).
+5. Create the PostgreSQL database and schemas. Follow the guide at [docs/setup-database.md](docs/setup-database.md).
 
 ## 📊 Project status
 
