@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+
+# Entorno y secretos
+.env
+.env.local
+
+# Datos (NUNCA subir datos al repo)
+data/
+
+# Notebooks (checkpoints)
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# dbt (lo agregaremos cuando integremos dbt)
+dbt_project/target/
+dbt_project/logs/
+dbt_project/dbt_packages/
