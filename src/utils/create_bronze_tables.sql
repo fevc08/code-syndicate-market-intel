@@ -71,6 +71,7 @@ CREATE TABLE IF NOT EXISTS raw.companies (
     github VARCHAR(500),
     facebook VARCHAR(500),
     angellist VARCHAR(500),
+    numeric_id INTEGER,
     country_code CHAR(2), -- Nombre original en API: "country", renombrado a "country_code" para consistencia con ADR 0003
     response_time_in_days JSONB,
     logo JSONB,
@@ -164,3 +165,6 @@ CREATE INDEX IF NOT EXISTS idx_raw_job_tags_tag_id
 
 CREATE INDEX IF NOT EXISTS idx_raw_companies_country
     ON raw.companies (country_code);
+
+CREATE INDEX IF NOT EXISTS idx_raw_companies_numeric_id
+    ON raw.companies (numeric_id);
